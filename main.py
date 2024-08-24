@@ -71,8 +71,7 @@ def sync_directories(source, destination):
         return
     
     rawSource = source / "raw"
-    rawDestination = destination / "raw"
-    isDeletedFolder = destination / "IsDeleted"
+    rawDestination = destination / "raw"    
 
     if not rawSource.exists():
         # throw error
